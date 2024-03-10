@@ -8,73 +8,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script language="javascript">
-function go()
-{
-
-var i,j,sum=0;
-i=Number(document.a.b.value);
-j=Number(document.a.c.value);
-sum=i+j;
-document.a.d.value=sum;
-
-}
-
-function wanna()
-{
-
-var i,j,sum=0;
-i=Number(document.a.b.value);
-j=Number(document.a.c.value);
-sum=i-j;
-document.a.d.value=sum;
-
-}
-
-function want()
-{
-
-var i,j,sum=0;
-i=Number(document.a.b.value);
-j=Number(document.a.c.value);
-sum=i*j;
-document.a.d.value=sum;
-
-}
-
-function went()
-{
-
-var i,j,sum=0;
-i=Number(document.a.b.value);
-j=Number(document.a.c.value);
-sum=i/j;
-document.a.d.value=sum;
-
-}
-
-function quadartic1()
-
-{
-      
-    var a,b,c;
-var sqr1,root1,root2,sqr4,sqr5,sqr6;
-
-  a=Number(document.i.j.value);
-  b=Number(document.i.k.value);
-  c=Number(document.i.l.value);
-
-sqr1=Math.sqrt(b*b-4*a*c);
-sqr4=-b+sqr1;
-sqr5=-b-sqr1;
-sqr6=2*a;
-root1=sqr4/sqr6;
-root2=sqr5/sqr6;
-
-document.i.m.value=root1;
-document.i.n.value=root2;
-
-}
-
 
 
 </script>
@@ -82,145 +15,91 @@ document.i.n.value=root2;
 <style>
 
 *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
         }
 
-        #hello{
-           
-           width: 30%;
-           height: 42%;
-           background-color: brown;
-           margin-left: 35%;
-           padding-left: 25px;
-           padding-top: 5px;
-           margin-top: 20px;
+.hello{
+
+        height: 70px;
+        background-color: rgb(167, 143, 143);
+               
+        
+        }
+ 
+.hello1{
+
+     font-size: 40px;
+     margin-left: 10px;
+     line-height: 150%;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     width: 222px;
+    
+}
+
+@media(max-width:500px){
+
+.hello1{
+
+    font-size: 25px;
+    line-height: 260%;
    
-          }
-          #abin{
-            width: 30%;
-            height: 40%;
-            margin-left: 35%;
-            background-color: cornflowerblue;
-            margin-top: 30px;
-          }
-
-          @media (max-width: 600px) {
-                 #hello{
-
-                    width: 85%;
-                    margin-left: 7.8%;
-                    
-                  
-
-                 }  
-                 } 
-
-                 
-          @media (max-width: 600px) {
-                 #abin{
-
-                    width: 85%;
-                    margin-left: 7.8%;
-
-                 } 
-                }
-                #pol{
-
-width: 120px;
-float: left;
-padding-left: 45px;
-margin-left: 29px;
+}
 
 }
 
-
-@media(max-width:600px){
-
-    #pol{
-
-        margin-top: 9%;
-        padding-left: 2px;
-}
-}
-
-#h1{
-
-width: 100%;
-height: 40px;
-background-color: yellow;
-margin-top: 5px;
-
-
-}
-
-#h2{
-
+.hello2{
+           
     width: 100%;
-height: 25px;
-background-color: yellow;
-margin-top: 7px;
+    height: 1000px;
 
 }
 
-#h3{
+@media(max-width:500px){
+  
+    .hello2{
+          
+         height: 350px;
 
-width: 100%;
-height: 20px;
-background-color: yellow;
-margin-top: 1500px;
+    }
 
 }
+
+.hello4{
+
+   font-size: 30px;
+   color: darkgreen;
+
+
+}
+
+.hello5{
+
+    font-size: 50px;
+    color: rgb(1, 68, 68);
+}
+
 </style>
 
 </head>
       
-<body bgcolor="black">
+<body>
 
-<div id="abin">
-    <h2>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<div id="pol">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basic</div>Calculator</h2><br>
-    
-    <form name="a">
-        <center> <h3>Enter the first number:</h3>
-            <input name="b" type="text"><br>
-            <h3>Enter the second number:</h3>
-            <input name="c" type="text"><br>
-            <h3>Output</h3>
-            <input name="d" type="text"><br>
-            <input type="button" value="Add(+)" onclick=go()>
-            <input type="button" value="sub(-)" onclick=wanna()>
-            <input type="button" value="Mul(*)" onclick=want()>
-            <input type="button" value="Div(/)" onclick=went()><br>
-            <input type="reset"></center>
-    </form>
-         
-    
+<div class="hello">
+
+    <div class="hello1">southernbois </div>
+   
 </div>
 
-    <div id="hello">
+<img src="yo.jpeg" class="hello2">
 
-                  <h2>&nbsp; &nbsp; &nbsp; &nbsp;Quadratic Equation Solver</h2><br>
-
-        <form name="i">
-            Enter the 1<sup>1st</sup> coefficient(a):
-               <input name="j" type="text"><br><br>
-               Enter the 2<sup>nd</sup> coefficient(b):
-               <input name="k" type="text"><br><br>
-               Enter the 3<sup>rd</sup> coefficient(c):
-               <input name="l" type="text"><br><br>
-               Root 1:
-               <input name="m" type="text"><br><br>
-               Root 2:
-               <input name="n" type="text"><br><br>
-               <input type="reset">
-               <input type="button" value="Calulate" onclick=quadartic1()>
-         </form>
-
-        </div>
-        <div id="h3"> . </div>
-        <div id="h2"> . </div>
-        <div id="h1"> . </div>
-
+<h1 align="center" class="hello5">Southern Bois</h1>
+<p align="justify" class="hello4">Friendship in simple words is a relationship you have with your chosen family. 
+    Friends are the sisters and brothers we never had, and are by our side through life’s ups and downs. 
+    It feels great to celebrate our friends for special occasions or simply brighten their day just because. 
+    Whether you're looking for the perfect caption or a sweet saying to accompany a birthday gift — friendship quotes are a great way to show your pals how much they mean to you , by "Southern Bois"</p>
+   
 </body>
 </html>
